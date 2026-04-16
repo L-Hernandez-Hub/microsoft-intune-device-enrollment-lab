@@ -65,7 +65,7 @@ Performed test sign-ins using the enrolled user account and reviewed sign-in log
 ### 4. Simulated a Noncompliant Device Condition
 Intentionally modified the device by disabling BitLocker encryption to simulate a non-compliant endpoint. After forcing a device sync, the device was marked as Noncompliant in Microsoft Intune due to failing the BitLocker requirement defined in the compliance policy created. Verified non-compliance at the policy level, confirming BitLocker as the root cause. Attempted to access Microsoft 365 resources, where Conditional Access enforcement blocked access and required the device to meet compliance requirements.
 
-![Screenshot 13](Screenshots/10-conditional-access-policy.png)
+![Screenshot 13](Screenshots/13-device-noncompliant.png)
 
 ![Screenshot 14](Screenshots/14-windows-security-compliance-noncompliant.png)
 
