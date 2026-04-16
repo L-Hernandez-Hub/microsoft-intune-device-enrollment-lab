@@ -1,4 +1,4 @@
-# Microsoft Intune Device Compliance & Conditional Access Troubleshooting Lab
+# Microsoft Intune Device Enrollment, Compliance & Conditional Access Troubleshooting Lab
 
 ## Objective
 Simulate and troubleshoot a real-world Microsoft Intune access control issue by enrolling a Windows 11 device, applying configuration and compliance policies, enforcing Conditional Access based on device compliance, intentionally causing a compliance failure, and restoring access through remediation.
@@ -89,4 +89,14 @@ Intentionally disabled BitLocker encryption on the device to simulate a noncompl
 ---
 
 ### 5. Remediated Device Compliance and Restored Access
+Re-enabled the required endpoint security setting, initiated policy synchronization, and verified the device returned to a compliant state. Retested Microsoft 365 access and confirmed Conditional Access allowed the user back into protected resources.
 
+![Screenshot 18](Screenshots/18-bitlocker-enabled.png)
+
+![Screenshot 19](Screenshots/19-entra-compliant-confirmation.png)
+
+## Key Takeaways
+- Intune compliance and Entra Conditional Access work together to enforce secure access
+- A user can authenticate successfully but still be blocked from resources if the device is noncompliant
+- Testing Conditional Access in report-only mode reduces risk before enforcement
+- Group-based policy targeting is cleaner and more scalable than per-user assignments
